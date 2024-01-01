@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Havacılığa Dair</title>
+    <link rel="stylesheet" href="../css/index_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+     <nav>
+         <a href="index.html"><img src="../images/logo_1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../html/index.html">ANA SAYFA</a></li>
+                <li><a href="../html/haberler.html">HABERLER</a></li>
+                <li><a href="../html/hava_yollari.html">HAVA YOLLARI</a></li>
+                <li><a href="../html/kaza_blog.html">KAZA BLOG</a></li>
+                <li><a href="../html/iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+<div class="text-box">
+    <h1>Havacılığa Dair Her Şey</h1>
+    <p>Havacılığa dair aradığınız her şeye bu siteden ulaşabilirsin.</p>
+    <a href="../html/iletisim.html" class="button_1"> Daha fazlası İçin Bizimle İletişime Geç</a>
+   
+</div>        
+
+</section>
+
+<!-------- Website içeriği bilgi ------->
+<section class="content">
+    
+    <h1> Websitemizde Neler Var</h1>
+    <p>Bu websitesinde havacılığa dair en yeni haberlere, Dünyanın önde gelen havayolu şirketleri ile iligi bilgilere<br>ve havacılık tarihinde yaşanmış en büyük kazalar ile ilgili bilgilere ulaşabilirsin.</p>
+
+    <div class="row">
+        <div class="content-col">
+            <h3><a href="../html/haberler.html">Haberler</a></h3>
+            <p><a href="../html/haberler.html">Havacılıkta son gelişmeler, Avrupa ve dünyadaki havayolu şirketlerine dair en güncel ve doğru haberler,
+                Ülkelerin askeri havacılıktaki en yeni adımları ve çok daha fazlası bu sitede!</a></p>
+        </div>
+        <div class="content-col">
+        <h3><a href="../html/hava_yollari.html">Hava Yolları</a></h3>
+        <p><a href="../html/hava_yollari.html">Dünya Avrupa'da önde gelen havayolu şirketlerinin hangi ülkelerin bayrak taşıyıcı havayolları
+            olduğunı öğrenmek için Hava Yolları sayfasını ziyaret edebilirsin!</a></p>
+        </div>
+        <div class="content-col">
+            <h3><a href="../html/kaza_blog.html">Kaza Blog</a></h3>
+            <p><a href="../html/kaza_blog.html">Havacıığın  kuralları kanla yazılır. Bu kuralları ve ilkeleri tekrar gözden geçirilmesini sağlayan ve dünyada gerçkeleşmiş en büyük havacılık kazalarına yine bu siteden ulaşabilirsiniz.</a></p>
+            </div>
+    </div>
+</section>
+
+<section class="footer">
+    <h4>Sosyal Medya</h4>
+    <p>Aşağıdaki linklerden sosyal medya hesaplarıma ulaşabilirsin.</p>
+    <div class="icons">
+        <a href="https://twitter.com/ibrassmn">
+        <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ibrassmn">
+            <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ibrahim-%C5%9Fi%C5%9Fman-866541223/">
+        <i class="fa fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ibrassmn">
+        <i class="fa fa-github"></i>
+        </a>
+    </div>
+</section>
+
+
+
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>

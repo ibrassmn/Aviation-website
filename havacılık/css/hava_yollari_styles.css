@@ -1,0 +1,864 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/hv-pg-13.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1{
+    color: #fff;
+    margin-top: 100px;
+
+}
+
+.sub-header p{
+    color: #fff;
+    size: 14px;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 61px;
+
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 12px 18px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:rgba(238,208,203,255); /* alt cizgi rengi*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+.sub-header h1 {
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 0px; /* Yeni eklenen satır, istediğiniz boşluğu sağlar */
+}
+
+.sub-header p {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 20px; /* Yeni eklenen satır, istediğiniz boşluğu sağlar */
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    } 
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:rgba(27,22,62,255) ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+/*---------------ICERIK v FOTOGRAFLAR----------------*/
+
+.hava-yolu{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.row , .row-2 , .row-3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.hava-yolu-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hava-yolu-col img{
+     width: 100%;
+     display: block;
+}
+
+/*----------THY----------*/
+.layer_thy{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_thy:hover{
+    background: hsla(0, 77%, 70%, 0.719) ;
+
+}
+
+.layer_thy h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_thy:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_thy h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_thy:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+.layer_thy p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_thy:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+/*----------PEGASUS----------*/
+.layer_pgs{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_pgs:hover{
+    background: hsla(58, 95%, 78%, 0.534) ;
+
+}
+
+.layer_pgs h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_pgs:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_pgs h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_pgs:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+.layer_pgs p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_pgs:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+/*----------USA AIR----------*/
+.layer_usa{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_usa:hover{
+    background: hsla(231, 33%, 71%, 0.719) ;
+
+}
+
+.layer_usa h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_usa:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_usa h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_usa:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_usa p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_usa:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+/*--------------KLM--------------*/
+.layer_klm{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_klm:hover{
+    background: hsla(202, 65%, 81%, 0.719) ;
+
+}
+
+.layer_klm h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_klm:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_klm h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_klm:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_klm p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_klm:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+/*----------QTR----------*/
+.layer_qtr{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_qtr:hover{
+    background: hsla(352, 89%, 75%, 0.719) ;
+
+}
+
+.layer_qtr h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_qtr:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_qtr h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_qtr:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_qtr p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_qtr:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+/*----------LFT----------*/
+.layer_lft{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_lft:hover{
+    background: hsla(229, 14%, 30%, 0.719) ;
+
+}
+
+.layer_lft h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_lft:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_lft h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_lft:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_lft p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;    
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_lft:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+/*----------FRC----------*/
+.layer_frc{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_frc:hover{
+    background: hsla(219, 89%, 75%, 0.719) ;
+
+}
+
+.layer_frc h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_frc:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_frc h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_frc:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_frc p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_frc:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+/*----------JPN----------*/
+.layer_jpn{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_jpn:hover{
+    background: hsla(352, 89%, 75%, 0.719) ;
+
+}
+
+.layer_jpn h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_jpn:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_jpn h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_jpn:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_jpn p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_jpn:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+/*----------ETH----------*/
+.layer_eth{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+
+.layer_eth:hover{
+    background: hsla(29, 89%, 75%, 0.719) ;
+
+}
+
+.layer_eth h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_eth:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.layer_eth h4{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_eth:hover h4{
+    bottom: 46%;
+    opacity: 1;
+}
+
+.layer_eth p{
+    width: 90%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 19px;
+    text-align: justify;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+}
+
+.layer_eth:hover p{
+    margin-top: 10px;
+    bottom: 10%;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/*-------------------------------*/
+.row-2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 700px) {
+    
+    .row, .row-2 {
+        flex-direction: column; /* .row ve .row-2 sınıflarının yönlendirme özelliğini değiştir,elemanları dikey olarak sıralar */
+    }
+    
+
+    .hava-yolu-col {
+        flex-basis: 100%; /* Küçük ekranlarda genişliğini tam ekran yapar*/
+    }
+}
+
+
+/*----------IKINCI SIRA--------------*/
+
+
+
+/*-----FOOTER--------*/
+
+
+.footer{
+    background-color:rgba(2,25,44,255)
+    ;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer h4{
+    color: rgba(238,208,203,255);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.footer p{
+    color: #fff ;
+}
+
+.icons .fa{
+    color: rgba(238,208,203,255);
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 18px 0 ;
+    text-decoration: none;
+    border: none;
+    border-style: none;
+}
+
+.icons a{
+    display: inline-block;
+}

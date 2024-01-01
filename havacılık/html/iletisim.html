@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="../css/iletisim_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+     <nav>
+         <a href="index.html"><img src="../images/logo_1.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="../html/index.html">ANA SAYFA</a></li>
+                <li><a href="../html/haberler.html">HABERLER</a></li>
+                <li><a href="../html/hava_yollari.html">HAVA YOLLARI</a></li>
+                <li><a href="../html/kaza_blog.html">KAZA BLOG</a></li>
+                <li><a href="../html/iletisim.html">İLETİŞİM</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+        <h1>İLETİŞİM ve KAZA RAPOR PAYLAŞIMI</h1>
+    </div>
+   
+</section>
+
+<!----iLETİŞİM--->
+<section class="iletisim">
+    <div class="row">
+        <div class="iletisim-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>Postane,Eflatun Sokak NO:8</h5>
+                    <p>Tuzla, İstanbul, TR</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>05464538213</h5>
+                    <p>Bize bu numarada Ulaşabilirsin!</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>ibrassmn@gmail.com</h5>
+                    <p>Bu mail adresinden kaza raporlarını gönderebilirsin!</p>
+                </span>
+            </div>
+        </div>
+        <div class="iletisim-col">
+            <form action="https://formspree.io/f/xeqyjyzp" method="post">
+                <input type="text" name="name" placeholder="İsminizi Yaznız."required>
+                <input type="email" name="email" placeholder="e-mail Adresinizi Yaznız."required>
+                <input type="text" name="message-nama" placeholder="Bahsedeceğiniz Kaza."required>
+                <textarea rows="8" name="message" placeholder="Detaylı Anlatım" required></textarea>
+                <button type="submit" class="message_button">Mesaj Gönder</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!----HARTİA-->
+
+<div class="h2">NEREDEYİZ?</div>
+
+<section class="locaiton">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.59349956755!2d29.287819676521625!3d40.814925731307426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadc2ae95bbf6b%3A0x169aa10c942c2a31!2sPiri%20Reis%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1702238804133!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</section>
+
+<!---FOOTER-->
+    <section class="footer">
+        <h4>Sosyal Medya</h4>
+        <p>Aşağıdaki linklerden sosyal medya hesaplarıma ulaşabilirsin.</p>
+        <div class="icons">
+            <a href="https://twitter.com/ibrassmn">
+            <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/ibrassmn">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ibrahim-%C5%9Fi%C5%9Fman-866541223/">
+            <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ibrassmn">
+            <i class="fa fa-github"></i>
+            </a>
+        </div>
+    </section>
+
+    
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>    
